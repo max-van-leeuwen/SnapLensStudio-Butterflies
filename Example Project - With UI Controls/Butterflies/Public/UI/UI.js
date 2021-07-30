@@ -16,26 +16,29 @@ var followHeightStart = script.butterflyController.api.followTransform.getWorldP
 
 
 //@input SceneObject UIRegion
+//@input SceneObject worldMesh
+var isSpectacles = global.deviceInfoSystem.isSpectacles();
 function init(){
-	var isSpectacles = global.deviceInfoSystem.isSpectacles();
-
-	script.api.toggleWorldMeshOcclusion();
-	if(!isSpectacles) script.api.toggleWorldMeshOcclusion();
-
-	script.api.toggleTablesChairsOnly();
-	if(!isSpectacles) script.api.toggleTablesChairsOnly();
-
-	script.api.toggleWorldMeshLanding();
-	if(!isSpectacles) script.api.toggleWorldMeshLanding();
-
-	script.api.toggleAvoidCollisions();
-
-
 	if(isSpectacles){
 		script.UIRegion.enabled = false;
+		script.worldMesh.destroy();
+	}else{
+		touchStartEvent.bind(moveToTap);
+		script.worldMesh.enabled = true;
 	}
 
-	if(!isSpectacles) touchStartEvent.bind(moveToTap);
+	if(!isSpectacles){
+		script.api.toggleWorldMeshOcclusion();
+		script.api.toggleWorldMeshOcclusion();
+
+		script.api.toggleTablesChairsOnly();
+		script.api.toggleTablesChairsOnly();
+
+		script.api.toggleWorldMeshLanding();
+
+		script.api.toggleAvoidCollisions();
+		script.api.toggleAvoidCollisions();
+	}
 
 	script.api.toggleUI();
 }
@@ -195,7 +198,12 @@ script.api.toggleUI = function(){
 
 function resetSpawn(){
 	var sliderValue = script.spawnCountSlider.api.getSliderValue();
-	var amount = sliderValue * (script.maxSpawnCount - script.minSpawnCount) + script.minSpawnCount;
+	var amount;
+	if(isSpectacles){
+		amount = 5;
+	}else{
+		amount = sliderValue * (script.maxSpawnCount - script.minSpawnCount) + script.minSpawnCount;
+	}
 	script.butterflyController.api.removeButterflies();
 	script.butterflyController.api.spawnButterflies(amount);
 }

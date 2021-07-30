@@ -3,7 +3,7 @@
     "document_id": "C4cH0lZODF9g44AHcviT",
     "original_document_id": "z5ajYSBAhsesZsUY-Y-d",
     "version": "28",
-    "lastChanged": "1627377388113",
+    "lastChanged": "1627677492968",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -92,9 +92,6 @@
                     ],
                     [
                         "Stream",
-                        "UI"
-                    ],
-                    [
                         "UI"
                     ],
                     [
@@ -274,6 +271,8 @@
                     "1624532453345450:322263",
                     "1624532967004585:375247",
                     "1627080139439983:4255796",
+                    "1627080139455520:4255858",
+                    "1627080280443840:4355555",
                     "1627080280575997:4356359",
                     "1627080280660087:4356958",
                     "1627080280912589:4358440",
@@ -315,7 +314,7 @@
             ]
         },
         "MetaInfoUIComponent": {
-            "icon_hash": "7bacb6a8c00c5457e8782871f2ac57bb",
+            "icon_hash": "230b5ec9f676073149476517c3624c34",
             "icon_path": "icon.png",
             "hints": [
                 ""
@@ -2180,7 +2179,7 @@
                     },
                     {
                         "k": "11829",
-                        "v": "31f62aa18c5b3063d1d6bd7b7661cb26"
+                        "v": "eac6f2e7be8ee54d476c6fd1ea31310f"
                     },
                     {
                         "k": "11831",
@@ -2252,7 +2251,7 @@
                     },
                     {
                         "k": "11857",
-                        "v": "bc0e0982dee45e164b30489c052a0184"
+                        "v": "5b992ed527bac2a6537eb3bc20d92fa2"
                     },
                     {
                         "k": "11858",
@@ -2264,7 +2263,7 @@
                     },
                     {
                         "k": "11861",
-                        "v": "0bb5d9d884809ed0b17e750b35368c2e"
+                        "v": "097c232958d434767783aaef5100a6f3"
                     },
                     {
                         "k": "11867",
@@ -2348,7 +2347,7 @@
                     },
                     {
                         "k": "11902",
-                        "v": "454603a3e7defa4b2d177d42e2adff78"
+                        "v": "44cba265ffc3199a59e825b70acfa43e"
                     },
                     {
                         "k": "11905",
@@ -2380,7 +2379,7 @@
                     },
                     {
                         "k": "11918",
-                        "v": "408a024d7374813b3ba17338bde1f3e6"
+                        "v": "c68e7955f34c13b473ea5ba2560e7c6f"
                     },
                     {
                         "k": "11920",
@@ -2594,32 +2593,32 @@
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2021-07-26T11:06:52",
+                        "lastModified": "2021-07-28T22:29:18",
                         "name": "Public",
-                        "hash": "c4dd8091c7a7335c84fa00174562045c",
+                        "hash": "96aae46832b2c76d7c54d4768f0f4fb3",
                         "children": [
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-07-26T11:08:15",
+                                "lastModified": "2021-07-28T22:29:17",
                                 "name": "Butterfly",
                                 "hash": "38c1b291b59354082f23ac7be59b4b1f",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2021-07-26T11:06:52",
+                                        "lastModified": "2021-07-28T22:29:17",
                                         "name": "Mesh",
                                         "hash": "c3e61d8564efb44eb53a8f7d30c0c1cb",
                                         "children": [
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2021-07-26T11:06:52",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "Plane.mesh",
                                                 "hash": "d533ea13249b5e36c7d724c3f8ac63b3",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2021-07-26T11:06:52",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "folder.lock",
                                                 "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                 "children": ""
@@ -2628,27 +2627,27 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2021-07-26T11:06:52",
+                                        "lastModified": "2021-07-28T22:29:17",
                                         "name": "Script",
                                         "hash": "e361d3e81498630d32e293ee90d5841f",
                                         "children": [
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2021-07-26T11:16:37",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "Butterfly.js",
                                                 "hash": "1e46b2e9ca16cdf96968389ec7caba8a",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2021-07-26T11:28:11",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "Butterfly Controller.js",
                                                 "hash": "b8b3ae352631df0350706333feb3a8c2",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2021-07-26T11:06:52",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "folder.lock",
                                                 "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                 "children": ""
@@ -2657,7 +2656,7 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2021-07-26T11:06:52",
+                                        "lastModified": "2021-07-28T22:29:17",
                                         "name": "folder.lock",
                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                         "children": ""
@@ -2666,66 +2665,66 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-07-25T23:45:49",
+                                "lastModified": "2021-07-28T22:29:18",
                                 "name": "UI",
-                                "hash": "210037d84d1cf008da2f0c26ec71ebd5",
+                                "hash": "017acf9bd37902f8aa261a9765db2195",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2021-07-25T23:45:49",
+                                        "lastModified": "2021-07-28T22:29:17",
                                         "name": "Resources From Asset Library",
-                                        "hash": "05aa1c0365ff0291f0631de662416a27",
+                                        "hash": "4d5c3933abc35a98bc86c4a1828e029d",
                                         "children": [
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-07-25T23:45:49",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "Textures",
                                                 "hash": "2363de15538aa8b9bced8b11f079bc8a",
                                                 "children": [
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "half_circle.pvr",
                                                         "hash": "f25dcabcebddb9adb6278db0647f5d00",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "circle.pvr",
                                                         "hash": "5348e378327d0f21714885cba3843ed2",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "true",
-                                                        "lastModified": "2021-07-25T23:45:49",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "Color Picker",
                                                         "hash": "8d80172213e6b6b1befbdfe0c847a977",
                                                         "children": [
                                                             {
                                                                 "isFolder": "false",
-                                                                "lastModified": "2021-07-24T00:44:33",
+                                                                "lastModified": "2021-07-28T22:29:17",
                                                                 "name": "colorPicker_popup.pvr",
                                                                 "hash": "4081c5e100cee199c73c5a65bcd3f1af",
                                                                 "children": ""
                                                             },
                                                             {
                                                                 "isFolder": "false",
-                                                                "lastModified": "2021-07-24T00:44:33",
+                                                                "lastModified": "2021-07-28T22:29:17",
                                                                 "name": "colorpicker_background.pvr",
                                                                 "hash": "13f99fe5f5f2688822059993c43d0e2e",
                                                                 "children": ""
                                                             },
                                                             {
                                                                 "isFolder": "false",
-                                                                "lastModified": "2021-07-24T00:44:33",
+                                                                "lastModified": "2021-07-28T22:29:17",
                                                                 "name": "palette_background.pvr",
                                                                 "hash": "4d11d75ae2243c861010d652ed6f4458",
                                                                 "children": ""
                                                             },
                                                             {
                                                                 "isFolder": "false",
-                                                                "lastModified": "2021-07-24T00:44:33",
+                                                                "lastModified": "2021-07-28T22:29:17",
                                                                 "name": "folder.lock",
                                                                 "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                                 "children": ""
@@ -2734,20 +2733,20 @@
                                                     },
                                                     {
                                                         "isFolder": "true",
-                                                        "lastModified": "2021-07-25T23:45:49",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "Toggle",
                                                         "hash": "b6212903c68504f86e0b85fd0afd6ef8",
                                                         "children": [
                                                             {
                                                                 "isFolder": "false",
-                                                                "lastModified": "2021-07-24T00:44:33",
+                                                                "lastModified": "2021-07-28T22:29:17",
                                                                 "name": "toggle_background.pvr",
                                                                 "hash": "8fb4180d0842adf53a14ccf422ddf41d",
                                                                 "children": ""
                                                             },
                                                             {
                                                                 "isFolder": "false",
-                                                                "lastModified": "2021-07-24T00:44:33",
+                                                                "lastModified": "2021-07-28T22:29:17",
                                                                 "name": "folder.lock",
                                                                 "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                                 "children": ""
@@ -2756,14 +2755,14 @@
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "Base.png",
                                                         "hash": "203b97f7dd88fd357a12944549da2218",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "folder.lock",
                                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                         "children": ""
@@ -2772,27 +2771,27 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-07-27T11:14:50",
+                                                "lastModified": "2021-07-30T22:35:33",
                                                 "name": "Materials",
-                                                "hash": "51b8743d9dbb78e9af21e7a1de9ad4dc",
+                                                "hash": "60542735fffaf0b6f07873b3c3ca3551",
                                                 "children": [
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-27T11:14:50",
+                                                        "lastModified": "2021-07-30T22:35:33",
                                                         "name": "Palette Material.lsmat",
-                                                        "hash": "9ad35a038711b5f58869db9b2282cf8e",
+                                                        "hash": "0ac6d24e2e698c12ebfa30f160e90dd6",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:47:59",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "Popup Fill.lsmat",
                                                         "hash": "b316be0e6cda721a07dc45449870c862",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "folder.lock",
                                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                         "children": ""
@@ -2801,55 +2800,55 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-07-25T23:45:49",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "Scripts",
                                                 "hash": "1826a881b2a707e4af83a4cb30719da4",
                                                 "children": [
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "UIColorPicker.js",
                                                         "hash": "3899f64c6205627b542fc65f4fa22420",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "UIPopup.js",
                                                         "hash": "ff5e821b7f7d018fd0a03a4634d15da1",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "UIButton.js",
                                                         "hash": "5b33eee8ee1df2fbb140a5cb2fa939fc",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "UIDiscretePicker.js",
                                                         "hash": "8d56ba82106a6e5c7144ced901f1bfbf",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "UIToggle.js",
                                                         "hash": "63f5718b78b0e3a23881210d26cfb4b9",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "UIPanel.js",
                                                         "hash": "dd0fbff3f3a3839661124f523c66116c",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "folder.lock",
                                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                         "children": ""
@@ -2858,20 +2857,20 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-07-25T23:45:49",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "Fonts",
                                                 "hash": "16060818347d2e309d73a640d4470e01",
                                                 "children": [
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "fredoka_one_regular.ttf",
                                                         "hash": "4a2f2ea45a0bb1abe81b47d0afde4aae",
                                                         "children": ""
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "folder.lock",
                                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                         "children": ""
@@ -2880,26 +2879,26 @@
                                             },
                                             {
                                                 "isFolder": "true",
-                                                "lastModified": "2021-07-25T23:45:49",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "Hints",
                                                 "hash": "724b778e2d1c9fe3367d731ecb87f31b",
                                                 "children": [
                                                     {
                                                         "isFolder": "true",
-                                                        "lastModified": "2021-07-25T23:45:49",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "tap_hint",
                                                         "hash": "03b8525b063b64a4493c136ef7e07fe0",
                                                         "children": [
                                                             {
                                                                 "isFolder": "false",
-                                                                "lastModified": "2021-07-24T00:44:33",
+                                                                "lastModified": "2021-07-28T22:29:17",
                                                                 "name": "atlas_0.pvr",
                                                                 "hash": "0f1936de9a90129574210976e17c38f4",
                                                                 "children": ""
                                                             },
                                                             {
                                                                 "isFolder": "false",
-                                                                "lastModified": "2021-07-24T00:44:33",
+                                                                "lastModified": "2021-07-28T22:29:17",
                                                                 "name": "animation.t3d",
                                                                 "hash": "1b58692851180994f5fc9e5186b7aa5b",
                                                                 "children": ""
@@ -2908,7 +2907,7 @@
                                                     },
                                                     {
                                                         "isFolder": "false",
-                                                        "lastModified": "2021-07-24T00:44:33",
+                                                        "lastModified": "2021-07-28T22:29:17",
                                                         "name": "folder.lock",
                                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                         "children": ""
@@ -2917,7 +2916,7 @@
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2021-07-24T00:44:33",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "folder.lock",
                                                 "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                 "children": ""
@@ -2926,14 +2925,14 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2021-07-26T11:27:15",
+                                        "lastModified": "2021-07-30T22:34:47",
                                         "name": "UI.js",
-                                        "hash": "0bb5d9d884809ed0b17e750b35368c2e",
+                                        "hash": "097c232958d434767783aaef5100a6f3",
                                         "children": ""
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2021-07-24T00:44:33",
+                                        "lastModified": "2021-07-28T22:29:18",
                                         "name": "folder.lock",
                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                         "children": ""
@@ -2942,26 +2941,26 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-07-25T23:45:49",
+                                "lastModified": "2021-07-28T22:29:17",
                                 "name": "Butterfly EDIT",
-                                "hash": "90a1fdbf1f292fa90edee4e47944e45d",
+                                "hash": "95bf09307b6bc9550ba0807519f4b42d",
                                 "children": [
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2021-07-27T11:14:50",
+                                        "lastModified": "2021-07-30T22:35:33",
                                         "name": "Material [EDIT ME]",
-                                        "hash": "c91d19c231e7887e393679016677fdba",
+                                        "hash": "dc6c87fcb8d0e867d291f33de9500d5c",
                                         "children": [
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2021-07-27T11:14:50",
+                                                "lastModified": "2021-07-30T22:35:33",
                                                 "name": "Wing.lsmat",
-                                                "hash": "883e3d84a3fb83e702188593e1d8f831",
+                                                "hash": "7b6f9cc44568595f2d70e30fa51d9181",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2021-07-25T15:55:52",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "folder.lock",
                                                 "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                 "children": ""
@@ -2970,27 +2969,27 @@
                                     },
                                     {
                                         "isFolder": "true",
-                                        "lastModified": "2021-07-25T23:45:49",
+                                        "lastModified": "2021-07-28T22:29:17",
                                         "name": "Texture [EDIT ME]",
                                         "hash": "a7fade38779fc874a885f47440e5fa0f",
                                         "children": [
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2021-07-25T15:55:14",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "wing 1.png",
                                                 "hash": "e2c019e048af1776d0c323e1cf1f183f",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2021-07-25T15:55:14",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "wing 2.png",
                                                 "hash": "ac0197c8d0e8da81ab94b49602852285",
                                                 "children": ""
                                             },
                                             {
                                                 "isFolder": "false",
-                                                "lastModified": "2021-07-25T15:55:14",
+                                                "lastModified": "2021-07-28T22:29:17",
                                                 "name": "folder.lock",
                                                 "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                                 "children": ""
@@ -2999,7 +2998,7 @@
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2021-07-25T15:56:00",
+                                        "lastModified": "2021-07-28T22:29:17",
                                         "name": "folder.lock",
                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                         "children": ""
@@ -3008,13 +3007,13 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-07-25T23:45:49",
+                                "lastModified": "2021-07-28T22:29:17",
                                 "name": "Stream",
                                 "hash": "59adb24ef3cdbe0297f05b395827453f",
                                 "children": [
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2021-06-24T12:58:14",
+                                        "lastModified": "2021-07-28T22:29:17",
                                         "name": "folder.lock",
                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                         "children": ""
@@ -3023,27 +3022,27 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-07-27T11:14:50",
+                                "lastModified": "2021-07-30T22:35:33",
                                 "name": "World Mesh",
-                                "hash": "1932d32b874dab508590d677bbb67993",
+                                "hash": "e0297ae213dd845114a4a42914d0844f",
                                 "children": [
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2021-07-27T11:14:50",
+                                        "lastModified": "2021-07-30T22:35:33",
                                         "name": "World Occlude.lsmat",
-                                        "hash": "6ece93893a717e4fa399ef733fa9e374",
+                                        "hash": "7960781d6c8ff5b0462f4c2e68f961f2",
                                         "children": ""
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2021-07-27T11:14:50",
+                                        "lastModified": "2021-07-30T22:35:33",
                                         "name": "World Visualize.lsmat",
-                                        "hash": "bf451e8692794558005a34d9bbda3e79",
+                                        "hash": "3da9441f23d51f65f61b9fccf0a62913",
                                         "children": ""
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2021-07-24T00:45:28",
+                                        "lastModified": "2021-07-28T22:29:18",
                                         "name": "folder.lock",
                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                         "children": ""
@@ -3052,7 +3051,7 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2021-06-07T16:37:36",
+                                "lastModified": "2021-07-28T22:29:18",
                                 "name": "folder.lock",
                                 "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                 "children": ""
