@@ -2,7 +2,7 @@ An asset for Lens Studio that instantly adds butterflies to your scene.
 
 If your device has Lidar, they can even land on it and avoid collisions with it!
 
-
+Try [a demo of the butterflies in Snapchat here](https://lens.snapchat.com/16b62e0418ea4e7594da451df1e9da61).
 
 From [maxvanleeuwen.com/lensstudio-butterflies](https://maxvanleeuwen.com/lensstudio-butterflies)
 
