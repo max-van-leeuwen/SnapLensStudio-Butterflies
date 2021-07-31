@@ -6,8 +6,14 @@
 
 
 //@input Component.Script butterflyController
+//@input Component.DeviceTracking deviceTracking
+
+//@ui {"widget":"label", "label":""}
 //@input vec4 activeColor
 //@input vec4 inactiveColor
+
+//@ui {"widget":"label", "label":""}
+//@input SceneObject UIRegion
 
 
 
@@ -15,44 +21,36 @@ var followHeightStart = script.butterflyController.api.followTransform.getWorldP
 
 
 
-//@input SceneObject UIRegion
-//@input SceneObject worldMesh
-var isSpectacles = global.deviceInfoSystem.isSpectacles();
 function init(){
-	if(isSpectacles){
-		script.UIRegion.enabled = false;
-		script.worldMesh.destroy();
-	}else{
-		touchStartEvent.bind(moveToTap);
-		script.worldMesh.enabled = true;
-	}
+	touchStartEvent.bind(moveToTap);
 
-	if(!isSpectacles){
+	var deviceHasWorldMeshCapabilities = script.deviceTracking.worldTrackingCapabilities.sceneReconstructionSupported;
+
+	if(deviceHasWorldMeshCapabilities){
 		script.api.toggleWorldMeshOcclusion();
-		script.api.toggleWorldMeshOcclusion();
-
 		script.api.toggleTablesChairsOnly();
-		script.api.toggleTablesChairsOnly();
-
 		script.api.toggleWorldMeshLanding();
-
-		script.api.toggleAvoidCollisions();
-		script.api.toggleAvoidCollisions();
+	}else{
+		script.occludeWorldMesh.api.disableInteractable();
+		script.tablesChairsOnly.api.disableInteractable();
+		script.toggleWorldMeshLanding.api.disableInteractable();
+		script.toggleAvoidCollisions.api.disableInteractable();
 	}
 
+	// do not show UI on start
 	script.api.toggleUI();
 }
 delay(init);
 
 
 
+// gets text component from a button script
 function getTextComponent(scriptComponent){
 	return scriptComponent.getSceneObject().getChild(0).getChild(0).getComponent("Component.Text");
 }
 
 
 
-//@input Component.DeviceTracking deviceTracking
 function moveToTap(eventData){
 	var pos = eventData.getTapPosition();
 	var hit = script.deviceTracking.hitTestWorldMesh(pos)[0];
@@ -68,6 +66,7 @@ var touchStartEvent = script.createEvent("TapEvent");
 
 
 
+//@ui {"widget":"label", "label":""}
 //@input SceneObject worldMeshOccluder
 //@input Component.Script occludeWorldMesh
 script.api.toggleWorldMeshOcclusion = function(){
@@ -82,6 +81,7 @@ script.api.toggleWorldMeshOcclusion = function(){
 
 
 
+//@ui {"widget":"label", "label":""}
 //@input Component.Script tablesChairsOnly
 script.api.toggleTablesChairsOnly = function(){
 	var curClassifications = script.butterflyController.api.landOnClassifications;
@@ -98,6 +98,7 @@ script.api.toggleTablesChairsOnly = function(){
 
 
 
+//@ui {"widget":"label", "label":""}
 //@input Component.Script toggleWorldMeshLanding
 script.api.toggleWorldMeshLanding = function(){
 	var curValue = script.butterflyController.api.landOnWorldMesh;
@@ -107,10 +108,12 @@ script.api.toggleWorldMeshLanding = function(){
 		getTextComponent(script.toggleWorldMeshLanding).textFill.color = script.activeColor;
 	}
 	script.butterflyController.api.landOnWorldMesh = !curValue;
+	script.butterflyController.api.deviceTrackingComponent = script.deviceTracking;
 }
 
 
 
+//@ui {"widget":"label", "label":""}
 //@input Component.Script toggleAvoidCollisions
 script.api.toggleAvoidCollisions = function(){
 	var curValue = script.butterflyController.api.avoidCollision;
@@ -124,6 +127,7 @@ script.api.toggleAvoidCollisions = function(){
 
 
 
+//@ui {"widget":"label", "label":""}
 //@input Component.Script colorOffsetSlider
 script.api.colorOffset = function(){
 	var sliderValue = script.colorOffsetSlider.api.getSliderValue();
@@ -135,6 +139,7 @@ script.api.colorOffset = function(){
 
 
 
+//@ui {"widget":"label", "label":""}
 //@input Component.Script spawnCountSlider
 //@input int minSpawnCount
 //@input int maxSpawnCount
@@ -144,6 +149,7 @@ script.api.setSpawnCount = function(){
 
 
 
+//@ui {"widget":"label", "label":""}
 //@input Component.Script radiusSlider
 //@input float minRadius
 //@input float maxRadius
@@ -162,6 +168,7 @@ script.api.setRadius = function(){
 
 
 
+//@ui {"widget":"label", "label":""}
 //@input Component.Script heightSlider
 //@input float minHeight
 //@input float maxHeight
@@ -181,6 +188,7 @@ script.api.setHeight = function(){
 
 
 
+// toggles UI visibility
 var UI = true;
 script.api.toggleUI = function(){
 	UI = !UI;
@@ -196,20 +204,17 @@ script.api.toggleUI = function(){
 
 
 
+// removes all butterflies and spawns again with new, current spawn amount
 function resetSpawn(){
 	var sliderValue = script.spawnCountSlider.api.getSliderValue();
-	var amount;
-	if(isSpectacles){
-		amount = 5;
-	}else{
-		amount = sliderValue * (script.maxSpawnCount - script.minSpawnCount) + script.minSpawnCount;
-	}
+	var amount = sliderValue * (script.maxSpawnCount - script.minSpawnCount) + script.minSpawnCount;
 	script.butterflyController.api.removeButterflies();
 	script.butterflyController.api.spawnButterflies(amount);
 }
 
 
 
+// delays a function by 1 frame
 function delay(func){
 	var wait = 1;
 	function onUpdate(){
