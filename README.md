@@ -58,6 +58,11 @@ If you want to change parameters for the butterflies on runtime, this is what yo
 
 
 
+- Get or set whether butterflies should always be above ground level (world y = 0)
+	script.api.alwaysAboveGround
+
+
+
 - Get or set whether butterflies should land on the world mesh occasionally (world mesh generation/lidar needed) - when ebabled, script.api.deviceTrackingComponent is required for it to work!
 	script.api.landOnWorldMesh
 
@@ -80,8 +85,3 @@ If you want to change parameters for the butterflies on runtime, this is what yo
 
 - Get the array of currently instanced butterfly Scene Objects
 	script.api.butterflies
-
-
-
-- Get the array of cloned butterfly materials (one for each variation)
-	script.api.materials

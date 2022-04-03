@@ -28,11 +28,9 @@ function init(){
 
 	if(deviceHasWorldMeshCapabilities){
 		script.api.toggleWorldMeshOcclusion();
-		script.api.toggleTablesChairsOnly();
 		script.api.toggleWorldMeshLanding();
 	}else{
 		script.occludeWorldMesh.api.disableInteractable();
-		script.tablesChairsOnly.api.disableInteractable();
 		script.toggleWorldMeshLanding.api.disableInteractable();
 		script.toggleAvoidCollisions.api.disableInteractable();
 	}
@@ -82,23 +80,6 @@ script.api.toggleWorldMeshOcclusion = function(){
 
 
 //@ui {"widget":"label", "label":""}
-//@input Component.Script tablesChairsOnly
-script.api.toggleTablesChairsOnly = function(){
-	var curClassifications = script.butterflyController.api.landOnClassifications;
-	var newClassifications;
-	if(curClassifications.length === 2){
-		newClassifications = [1, 2, 3, 4, 5, 6, 7];
-		getTextComponent(script.tablesChairsOnly).textFill.color = script.inactiveColor;
-	}else{
-		newClassifications = [4, 5];
-		getTextComponent(script.tablesChairsOnly).textFill.color = script.activeColor;
-	}
-	script.butterflyController.api.landOnClassifications = newClassifications;
-}
-
-
-
-//@ui {"widget":"label", "label":""}
 //@input Component.Script toggleWorldMeshLanding
 script.api.toggleWorldMeshLanding = function(){
 	var curValue = script.butterflyController.api.landOnWorldMesh;
@@ -123,18 +104,6 @@ script.api.toggleAvoidCollisions = function(){
 		getTextComponent(script.toggleAvoidCollisions).textFill.color = script.activeColor;
 	}
 	script.butterflyController.api.avoidCollision = !curValue;
-}
-
-
-
-//@ui {"widget":"label", "label":""}
-//@input Component.Script colorOffsetSlider
-script.api.colorOffset = function(){
-	var sliderValue = script.colorOffsetSlider.api.getSliderValue();
-	var materialsList = script.butterflyController.api.materials;
-	for(var i = 0; i < materialsList.length; i++){
-		materialsList[i].mainPass.colorOffset = sliderValue;
-	}
 }
 
 
@@ -192,9 +161,7 @@ script.api.setHeight = function(){
 var UI = true;
 script.api.toggleUI = function(){
 	UI = !UI;
-	script.tablesChairsOnly.getSceneObject().enabled = UI;
 	script.toggleWorldMeshLanding.getSceneObject().enabled = UI;
-	script.colorOffsetSlider.getSceneObject().enabled = UI;
 	script.spawnCountSlider.getSceneObject().enabled = UI;
 	script.radiusSlider.getSceneObject().enabled = UI;
 	script.occludeWorldMesh.getSceneObject().enabled = UI;

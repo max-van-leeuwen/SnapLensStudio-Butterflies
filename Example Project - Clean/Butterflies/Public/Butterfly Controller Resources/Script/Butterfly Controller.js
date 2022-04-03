@@ -52,6 +52,11 @@
 //
 //
 //
+// - Get or set whether butterflies should always be above ground level (world y = 0)
+// 	script.api.alwaysAboveGround
+//
+//
+//
 // - Get or set whether butterflies should land on the world mesh occasionally (world mesh generation/lidar needed) - when ebabled, script.api.deviceTrackingComponent is required for it to work!
 // 	script.api.landOnWorldMesh
 //
@@ -77,33 +82,14 @@
 //
 //
 //
-// - Get the array of cloned butterfly materials (one for each variation)
-// 	script.api.materials
-//
 //
 //
 // ---
+// @ui {"widget":"label", "label":"Use the position of this object to"}
+// @ui {"widget":"label", "label":"control the butterflies' path."}
+// @ui {"widget":"label", "label":""}
 
-
-
-
-
-
-//@ui {"widget":"label", "label":""}
-//@ui {"widget":"label", "label":"Butterfly"}
-//@ui {"widget":"label", "label":"Max van Leeuwen"}
-//@ui {"widget":"label", "label":"twitter: @maksvanleeuwen"}
-//@ui {"widget":"label", "label":""}
-//@ui {"widget":"label", "label":"Use the position of this object to"}
-//@ui {"widget":"label", "label":"control the butterflies' path."}
-//@ui {"widget":"label", "label":""}
-//@ui {"widget":"label", "label":"Open this script for more information. Or see:"}
-//@ui {"widget":"label", "label":"maxvanleeuwen.com/lensstudio-butterflies"}
-//@ui {"widget":"label", "label":""}
-
-
-//@ui {"widget":"label", "label":""}
-//@ui {"widget":"label", "label":"spawning, moving"}
+//@ui {"widget":"label", "label":"Spawning,  Moving"}
 //@ui {"widget":"separator"}
 
 //@input int spawnOnStart = 30 {"min":0, "max":100}
@@ -112,21 +98,21 @@
 
 
 //@ui {"widget":"label", "label":""}
-//@ui {"widget":"label", "label":"visuals"}
+//@ui {"widget":"label", "label":"Visuals"}
 //@ui {"widget":"separator"}
-//@input int materialVariations = 2 {"min":0}
 //@input vec2 randomSize = {0.5, 1.0} {"min":0}
 
 
 //@ui {"widget":"label", "label":""}
-//@ui {"widget":"label", "label":"area"}
+//@ui {"widget":"label", "label":"Area"}
 //@ui {"widget":"separator"}
 
 //@input float followStrength = 1 {"min":0}
 //@input float followRadius = 50 {"min":0}
+//@input bool alwaysAboveGround = true
 
 //@ui {"widget":"label", "label":""}
-//@ui {"widget":"label", "label":"land on world mesh (world mesh, slower)"}
+//@ui {"widget":"label", "label":"Land on world mesh (world mesh, slower)"}
 //@ui {"widget":"separator"}
 //@input bool landOnWorldMesh = false
 //@input bool avoidCollision = false {"label":"Avoid Collision (slow)", "showIf":"landOnWorldMesh"}
@@ -143,11 +129,10 @@
 
 
 //@ui {"widget":"label", "label":""}
-//@ui {"widget":"label", "label":"advanced"}
+//@input bool advanced = false
 //@ui {"widget":"separator"}
 
-//@input SceneObject butterfly
-//@input Asset.Material wingMaterial
+//@input SceneObject[] objectsToSpawn {"showIf" : "advanced"}
 
 
 
@@ -162,30 +147,22 @@ script.api.followStrength = script.followStrength;
 script.api.followRadius = script.followRadius;
 script.api.followTransform = script.getSceneObject().getTransform();
 
+script.api.alwaysAboveGround = script.alwaysAboveGround;
 script.api.landOnWorldMesh = script.landOnWorldMesh;
 script.api.avoidCollision = script.avoidCollision;
 script.api.deviceTrackingComponent = script.deviceTracking;
 script.api.landOnClassifications = getClassifications();
 
 script.api.butterflies = [];
-script.api.materials = [];
 
 
 
-
-
-
-function init(){
-	script.butterfly.enabled = false;
-
-	for(var i = 0; i < script.materialVariations; i++){
-		var matVariation = i === 0 ? script.wingMaterial : script.wingMaterial.clone();
-		matVariation.name = "WingCopy_" + i.toString();
-		matVariation.mainPass.variation = i%script.materialVariations;
-		script.api.materials.push(matVariation);
+function init() {
+	for (var i = 0; i < script.objectsToSpawn.length; i++) {
+		script.objectsToSpawn[i].enabled = false;
 	}
 
-	if(script.api.landOnWorldMesh && !script.api.deviceTrackingComponent){
+	if (script.api.landOnWorldMesh && !script.api.deviceTrackingComponent) {
 		print("Butterflies landing on World Mesh only works if the Tracking Component has been specified!");
 	}
 }
@@ -193,8 +170,8 @@ init();
 
 
 
-function start(){
-	if(script.spawnOnStart > 0){
+function start() {
+	if (script.spawnOnStart > 0) {
 		spawnButterflies(script.spawnOnStart);
 	}
 }
@@ -202,8 +179,8 @@ delay(start);
 
 
 
-function spawnButterflies(amount){
-	for (var i = 0; i < amount; i++){
+function spawnButterflies(amount) {
+	for (var i = 0; i < amount; i++) {
 		var newButterfly = makeButterfly(i);
 		script.api.butterflies.push(newButterfly);
 	}
@@ -211,8 +188,8 @@ function spawnButterflies(amount){
 
 
 
-function removeButterflies(){
-	for (var i = 0; i < script.api.butterflies.length; i++){
+function removeButterflies() {
+	for (var i = 0; i < script.api.butterflies.length; i++) {
 		script.api.butterflies[i].destroy();
 	}
 	script.api.butterflies = [];
@@ -220,8 +197,13 @@ function removeButterflies(){
 
 
 
-var matIndex = 0; // cycles through material variations on each spawned butterfly
-function makeButterfly(index){
+function makeButterfly(index) {
+	if (script.objectsToSpawn.length == 0) {
+		print("Please set objects to copy");
+		return null;
+	}
+	var randomIdx = Math.floor(Math.random() * script.objectsToSpawn.length);
+
 	var p = script.api.followTransform.getWorldPosition();
 	var r = script.api.followRadius;
 
@@ -229,20 +211,17 @@ function makeButterfly(index){
 	var _y = (Math.random() * 2 - 1) * r + p.y;
 	var _z = (Math.random() * 2 - 1) * r + p.z;
 	var newPos = new vec3(_x, _y, _z);
-	
-	var objCopy = script.getSceneObject().copyWholeHierarchy(script.butterfly);
+
+	var objCopy = script.getSceneObject().copyWholeHierarchy(script.objectsToSpawn[randomIdx]);
 	objCopy.getTransform().setWorldPosition(newPos);
 
 	var newS = Math.random() * (script.api.randomSize.y - script.api.randomSize.x) + script.api.randomSize.x;
 	var newScale = new vec3(newS, newS, newS);
 	objCopy.getTransform().setWorldScale(newScale);
 
-	var objMat = script.api.materials[matIndex % script.api.materials.length];
-	matIndex++;
-	
 	objCopy.enabled = true;
 	var objCopyScript = objCopy.getComponent("Component.ScriptComponent");
-	objCopyScript.api.start(script, objMat);
+	objCopyScript.api.start(script);
 	objCopyScript.api.thisButterflyIndex = index;
 
 	return objCopy;
@@ -250,24 +229,24 @@ function makeButterfly(index){
 
 
 
-function getClassifications(){
+function getClassifications() {
 	var classifications = [];
-	if(script.landOnWall) 		classifications.push(1);
-	if(script.landOnFloor) 		classifications.push(2);
-	if(script.landOnCeiling) 	classifications.push(3);
-	if(script.landOnTable) 		classifications.push(4);
-	if(script.landOnSeat) 		classifications.push(5);
-	if(script.landOnWindow) 	classifications.push(6);
-	if(script.landOnDoor) 		classifications.push(7);
+	if (script.landOnWall) classifications.push(1);
+	if (script.landOnFloor) classifications.push(2);
+	if (script.landOnCeiling) classifications.push(3);
+	if (script.landOnTable) classifications.push(4);
+	if (script.landOnSeat) classifications.push(5);
+	if (script.landOnWindow) classifications.push(6);
+	if (script.landOnDoor) classifications.push(7);
 	return classifications;
 }
 
 
 
-function delay(func){ // delays a function 1 frame
+function delay(func) { // delays a function 1 frame
 	var wait = 1;
-	function onUpdate(){
-		if(wait <= 0){
+	function onUpdate() {
+		if (wait <= 0) {
 			script.removeEvent(waitEvent);
 			func();
 		}

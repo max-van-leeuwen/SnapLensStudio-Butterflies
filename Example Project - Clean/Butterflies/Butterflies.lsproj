@@ -1,9 +1,9 @@
 {
     "lens_id": "",
-    "document_id": "NqXAnDkH3wpX-oGKBlQI",
+    "document_id": "wo5B8oDif4rlPFEeTK1k",
     "original_document_id": "z5ajYSBAhsesZsUY-Y-d",
-    "version": "28",
-    "lastChanged": "1627291889753",
+    "version": "29",
+    "lastChanged": "1649020343851",
     "preview": "icon.png",
     "videoPreview": "preview.mp4",
     "videoPreviewUpdateTime": "",
@@ -22,8 +22,8 @@
         "lastSavedWith": {
             "type": "Public",
             "major": "4",
-            "minor": "1",
-            "patch": "0",
+            "minor": "16",
+            "patch": "1",
             "build": "0"
         }
     },
@@ -32,43 +32,51 @@
             "collapsedList": [
                 [
                     [
-                        "Butterfly"
+                        "Butterfly Controller Resources",
+                        "Materials"
                     ],
                     [
-                        "Butterfly",
-                        "Material [EDIT ME]"
+                        "Butterfly Controller Resources",
+                        "Materials",
+                        "Wing Blue"
                     ],
                     [
-                        "Butterfly",
-                        "Material [EDIT ME]",
-                        "Wing"
+                        "Butterfly Controller Resources",
+                        "Materials",
+                        "Wing Orange"
                     ],
                     [
-                        "Butterfly",
-                        "Mesh"
+                        "Butterfly Controller Resources",
+                        "Meshes"
                     ],
                     [
-                        "Butterfly",
-                        "Mesh",
+                        "Butterfly Controller Resources",
+                        "Meshes",
                         "Plane"
                     ],
                     [
-                        "Butterfly",
-                        "Script"
-                    ],
-                    [
-                        "Butterfly",
+                        "Butterfly Controller Resources",
                         "Script",
                         "Butterfly"
                     ],
                     [
-                        "Butterfly",
+                        "Butterfly Controller Resources",
                         "Script",
                         "Butterfly Controller"
                     ],
                     [
-                        "Butterfly",
-                        "Texture [EDIT ME]"
+                        "Butterfly Controller Resources",
+                        "Textures"
+                    ],
+                    [
+                        "Butterfly Controller Resources",
+                        "Textures",
+                        "wing 1"
+                    ],
+                    [
+                        "Butterfly Controller Resources",
+                        "Textures",
+                        "wing 2"
                     ],
                     [
                         "Other"
@@ -91,9 +99,11 @@
                     "1624532224853807:274697",
                     "1624532224854138:274699",
                     "1624532453345450:322263",
-                    "1624532967004585:375247"
+                    "1624532967004585:375247",
+                    "1649020187131009:27276"
                 ]
-            ]
+            ],
+            "selectionSetList": ""
         },
         "MetaInfoUIComponent": {
             "icon_hash": "56814dbefc6c60009fe6066406087653",
@@ -101,9 +111,10 @@
             "hints": [
                 ""
             ],
-            "lens": "Butterfly",
-            "applicability": "3",
-            "lens_descriptors": ""
+            "lens": "Butterflies",
+            "applicability": "2",
+            "lens_descriptors": "",
+            "Spectacles2021UseAllowed": "false"
         },
         "PreviewUiComponent": {
             "preview_descriptor": {
@@ -125,7 +136,7 @@
                 "back_preview_is_favorite": "false",
                 "front_preview_id": "bundle:Preview\/Videos\/Idle Person 1.webm",
                 "front_preview_is_favorite": "false",
-                "spectacles_preview_id": "bundle:Preview\/Videos\/Climbing\/Climbing.webm",
+                "spectacles_preview_id": "",
                 "spectacles_preview_is_favorite": "false"
             },
             "preview_ie_project_config": {
@@ -149,7 +160,7 @@
             "foldedOwnerSceneObjects": ""
         },
         "Material::UiComponent": {
-            "active_graph_asset": "1624532224525289:274636"
+            "active_graph_asset": "1649020186908295:27217"
         },
         "Script::UiComponent": {
             "active_graph_asset": "-1:-1"
@@ -178,38 +189,6 @@
                     "flags": "0"
                 },
                 {
-                    "resId": "13",
-                    "uid": "1624532224496241:274624",
-                    "name": "Files\/File9.mesh",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
-                    "resId": "14",
-                    "uid": "1624532224525289:274636",
-                    "name": "Files\/File11",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
-                    "resId": "80",
-                    "uid": "1624532482799087:327400",
-                    "name": "Files\/File90.js",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
-                    "resId": "81",
-                    "uid": "1624532490591664:329411",
-                    "name": "Files\/File91.js",
-                    "sourceFilePath": "",
-                    "additionalProperties": "",
-                    "flags": "1"
-                },
-                {
                     "resId": "99",
                     "uid": "1627078384472180:3331225",
                     "name": "",
@@ -226,17 +205,65 @@
                     "flags": "1"
                 },
                 {
-                    "resId": "101",
-                    "uid": "1627084393889473:1926390",
-                    "name": "Files\/File140.jpg",
+                    "resId": "103",
+                    "uid": "8675309:9035768",
+                    "name": "Physics Root World Settings Asset",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "0"
+                },
+                {
+                    "resId": "104",
+                    "uid": "1649020186848728:27152",
+                    "name": "Files\/File149.mesh",
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
                 },
                 {
-                    "resId": "102",
-                    "uid": "1627084394026531:1926402",
-                    "name": "Files\/File143.jpg",
+                    "resId": "105",
+                    "uid": "1649020186860871:27165",
+                    "name": "Files\/File151.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "106",
+                    "uid": "1649020186867971:27177",
+                    "name": "Files\/File152.js",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "107",
+                    "uid": "1649020186877225:27193",
+                    "name": "Files\/File153.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "108",
+                    "uid": "1649020186891287:27205",
+                    "name": "Files\/File156.jpg",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "109",
+                    "uid": "1649020186908295:27217",
+                    "name": "Files\/File159",
+                    "sourceFilePath": "",
+                    "additionalProperties": "",
+                    "flags": "1"
+                },
+                {
+                    "resId": "110",
+                    "uid": "1649020187028066:27256",
+                    "name": "Files\/File161",
                     "sourceFilePath": "",
                     "additionalProperties": "",
                     "flags": "1"
@@ -263,17 +290,23 @@
         },
         "RenderOrderComponent": {
             "autoRenderOrder": {
-                "0": "1624532224838866:274695",
-                "1": "1624532224853807:274697",
-                "2": "1624532224854138:274699",
-                "3": "1624532224854438:274701",
-                "4": "1624532225231799:274804",
-                "5": "1624532225232034:274806",
-                "6": "1624532453345450:322263",
-                "7": "1624532967004585:375247",
-                "8": "1624532967005075:375249",
-                "9": "1624532967012292:375262",
-                "10": "1627078382607810:3328947"
+                "0": "1624532967004585:375247",
+                "1": "1624532967005075:375249",
+                "2": "1624532967012292:375262",
+                "3": "1627078382607810:3328947",
+                "4": "1649020187131009:27276",
+                "5": "1649020187131716:27278",
+                "6": "1649020187131988:27280",
+                "7": "1649020187132219:27282",
+                "8": "1649020187132445:27284",
+                "9": "1649020187133699:27299",
+                "10": "1649020187134223:27301",
+                "11": "1649020187136007:27321",
+                "12": "1649020187136269:27323",
+                "13": "1649020187136529:27325",
+                "14": "1649020187136765:27327",
+                "15": "1649020187137902:27342",
+                "16": "1649020187138177:27344"
             }
         },
         "LayerComponent": {
@@ -297,30 +330,6 @@
         "IFileManager": {
             "pathes": [
                 {
-                    "k": "9",
-                    "v": "Files\/File9.mesh"
-                },
-                {
-                    "k": "10",
-                    "v": "Files\/File10.mesh"
-                },
-                {
-                    "k": "11",
-                    "v": "Files\/File11"
-                },
-                {
-                    "k": "12",
-                    "v": "Files\/File12.lsmat"
-                },
-                {
-                    "k": "90",
-                    "v": "Files\/File90.js"
-                },
-                {
-                    "k": "91",
-                    "v": "Files\/File91.js"
-                },
-                {
                     "k": "138",
                     "v": "Files\/File138"
                 },
@@ -329,38 +338,73 @@
                     "v": "Files\/File139.lsmat"
                 },
                 {
-                    "k": "140",
-                    "v": "Files\/File140.pvr"
+                    "k": "149",
+                    "v": "Files\/File149.mesh"
                 },
                 {
-                    "k": "141",
-                    "v": "Files\/File141.png"
+                    "k": "150",
+                    "v": "Files\/File150.mesh"
                 },
                 {
-                    "k": "142",
-                    "v": "Files\/File142.png"
+                    "k": "151",
+                    "v": "Files\/File151.js"
                 },
                 {
-                    "k": "143",
-                    "v": "Files\/File143.pvr"
+                    "k": "152",
+                    "v": "Files\/File152.js"
                 },
                 {
-                    "k": "144",
-                    "v": "Files\/File144.png"
+                    "k": "153",
+                    "v": "Files\/File153.pvr"
                 },
                 {
-                    "k": "145",
-                    "v": "Files\/File145.png"
+                    "k": "154",
+                    "v": "Files\/File154.png"
                 },
                 {
-                    "k": "146",
-                    "v": "Files\/File146.pvr"
+                    "k": "155",
+                    "v": "Files\/File155.png"
                 },
                 {
-                    "k": "147",
-                    "v": "Files\/File147.pvr"
+                    "k": "156",
+                    "v": "Files\/File156.pvr"
+                },
+                {
+                    "k": "157",
+                    "v": "Files\/File157.png"
+                },
+                {
+                    "k": "158",
+                    "v": "Files\/File158.png"
+                },
+                {
+                    "k": "159",
+                    "v": "Files\/File159"
+                },
+                {
+                    "k": "160",
+                    "v": "Files\/File160.lsmat"
+                },
+                {
+                    "k": "161",
+                    "v": "Files\/File161"
+                },
+                {
+                    "k": "162",
+                    "v": "Files\/File162.lsmat"
+                },
+                {
+                    "k": "163",
+                    "v": "Files\/File163.pvr"
+                },
+                {
+                    "k": "164",
+                    "v": "Files\/File164.pvr"
                 }
             ]
+        },
+        "RemoteApi::ModelManager": {
+            "api_specs": ""
         },
         "WorldComponent": {
             "sceneFile": "scene.scn",
@@ -372,56 +416,60 @@
             "public": {
                 "pathes": [
                     {
-                        "k": "11709",
-                        "v": "Butterfly\/Script"
-                    },
-                    {
-                        "k": "11714",
-                        "v": "Butterfly\/Mesh"
-                    },
-                    {
-                        "k": "11716",
-                        "v": "Butterfly\/Mesh\/Plane.mesh"
-                    },
-                    {
-                        "k": "11717",
-                        "v": "Butterfly\/Material [EDIT ME]"
-                    },
-                    {
-                        "k": "11719",
-                        "v": "Butterfly\/Material [EDIT ME]\/Wing.lsmat"
-                    },
-                    {
-                        "k": "11806",
-                        "v": "Butterfly"
-                    },
-                    {
                         "k": "11807",
                         "v": "Other"
-                    },
-                    {
-                        "k": "11809",
-                        "v": "Butterfly\/Script\/Butterfly Controller.js"
-                    },
-                    {
-                        "k": "11810",
-                        "v": "Butterfly\/Script\/Butterfly.js"
                     },
                     {
                         "k": "11829",
                         "v": "Other\/Graph Occluder.lsmat"
                     },
                     {
-                        "k": "11863",
-                        "v": "Butterfly\/Texture [EDIT ME]\/wing 1.png"
+                        "k": "11877",
+                        "v": "Butterfly Controller Resources"
                     },
                     {
-                        "k": "11864",
-                        "v": "Butterfly\/Texture [EDIT ME]\/wing 2.png"
+                        "k": "11878",
+                        "v": "Butterfly Controller Resources\/Meshes"
                     },
                     {
-                        "k": "11876",
-                        "v": "Butterfly\/Texture [EDIT ME]"
+                        "k": "11879",
+                        "v": "Butterfly Controller Resources\/Meshes\/Plane.mesh"
+                    },
+                    {
+                        "k": "11880",
+                        "v": "Butterfly Controller Resources\/Script"
+                    },
+                    {
+                        "k": "11881",
+                        "v": "Butterfly Controller Resources\/Script\/Butterfly Controller.js"
+                    },
+                    {
+                        "k": "11882",
+                        "v": "Butterfly Controller Resources\/Script\/Butterfly.js"
+                    },
+                    {
+                        "k": "11883",
+                        "v": "Butterfly Controller Resources\/Textures"
+                    },
+                    {
+                        "k": "11884",
+                        "v": "Butterfly Controller Resources\/Textures\/wing 1.png"
+                    },
+                    {
+                        "k": "11885",
+                        "v": "Butterfly Controller Resources\/Textures\/wing 2.png"
+                    },
+                    {
+                        "k": "11886",
+                        "v": "Butterfly Controller Resources\/Materials"
+                    },
+                    {
+                        "k": "11887",
+                        "v": "Butterfly Controller Resources\/Materials\/Wing Orange.lsmat"
+                    },
+                    {
+                        "k": "11888",
+                        "v": "Butterfly Controller Resources\/Materials\/Wing Blue.lsmat"
                     }
                 ],
                 "hashes": [
@@ -447,7 +495,7 @@
                     },
                     {
                         "k": "11719",
-                        "v": "301c2e79d1bf85652e04e9a6626e9bde"
+                        "v": "5d316708ac37fa72a3a01bfecca92680"
                     },
                     {
                         "k": "11722",
@@ -771,7 +819,7 @@
                     },
                     {
                         "k": "11829",
-                        "v": "835cc9753244e3550ea79e208f2c5497"
+                        "v": "4bebcab801ed681c22fe0af3209c7aa9"
                     },
                     {
                         "k": "11863",
@@ -782,6 +830,34 @@
                         "v": "ac0197c8d0e8da81ab94b49602852285"
                     },
                     {
+                        "k": "11879",
+                        "v": "d533ea13249b5e36c7d724c3f8ac63b3"
+                    },
+                    {
+                        "k": "11881",
+                        "v": "e6f8f654fe765145da4bf184a6bc466f"
+                    },
+                    {
+                        "k": "11882",
+                        "v": "aa7bb2bf4e9a7003e89be0f9b4bd7b22"
+                    },
+                    {
+                        "k": "11884",
+                        "v": "e2c019e048af1776d0c323e1cf1f183f"
+                    },
+                    {
+                        "k": "11885",
+                        "v": "ac0197c8d0e8da81ab94b49602852285"
+                    },
+                    {
+                        "k": "11887",
+                        "v": "a48bb45174cdd9caf507314f4059b996"
+                    },
+                    {
+                        "k": "11888",
+                        "v": "dc16498c9f2dfc7ed21c5f47b34e1dc0"
+                    },
+                    {
                         "k": "11925",
                         "v": "f3f8f179b87ba4b5a44077fb80d53214"
                     }
@@ -789,121 +865,26 @@
                 "publicState": {
                     "tree": {
                         "isFolder": "true",
-                        "lastModified": "2021-07-26T11:05:51",
+                        "lastModified": "2022-04-03T23:11:02",
                         "name": "Public",
-                        "hash": "2a835dc75249dfa435073fc1eafe31f3",
+                        "hash": "ea5b01f8da64240453e1e2a227ef9a84",
                         "children": [
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-07-26T11:05:51",
-                                "name": "Butterfly",
-                                "hash": "473f235d250d32071e579b5e440fa6bc",
+                                "lastModified": "2022-04-03T23:12:20",
+                                "name": "Other",
+                                "hash": "2ed863df03ced2d4b6acb047707701e0",
                                 "children": [
                                     {
-                                        "isFolder": "true",
-                                        "lastModified": "2021-07-26T11:05:51",
-                                        "name": "Mesh",
-                                        "hash": "c3e61d8564efb44eb53a8f7d30c0c1cb",
-                                        "children": [
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2021-06-24T12:57:04",
-                                                "name": "Plane.mesh",
-                                                "hash": "d533ea13249b5e36c7d724c3f8ac63b3",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2021-06-24T12:57:04",
-                                                "name": "folder.lock",
-                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
-                                                "children": ""
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "isFolder": "true",
-                                        "lastModified": "2021-07-26T11:31:16",
-                                        "name": "Material [EDIT ME]",
-                                        "hash": "d956f1e4fc4eaa98b821560994f03bc1",
-                                        "children": [
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2021-07-26T11:31:16",
-                                                "name": "Wing.lsmat",
-                                                "hash": "f6b1f3537d6d68a1c2ba4af098d274fe",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2021-06-24T12:57:04",
-                                                "name": "folder.lock",
-                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
-                                                "children": ""
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "isFolder": "true",
-                                        "lastModified": "2021-07-26T11:05:51",
-                                        "name": "Script",
-                                        "hash": "e361d3e81498630d32e293ee90d5841f",
-                                        "children": [
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2021-07-26T11:15:35",
-                                                "name": "Butterfly.js",
-                                                "hash": "1e46b2e9ca16cdf96968389ec7caba8a",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2021-07-26T11:31:07",
-                                                "name": "Butterfly Controller.js",
-                                                "hash": "b8b3ae352631df0350706333feb3a8c2",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2021-06-24T12:57:04",
-                                                "name": "folder.lock",
-                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
-                                                "children": ""
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "isFolder": "true",
-                                        "lastModified": "2021-07-26T11:05:51",
-                                        "name": "Texture [EDIT ME]",
-                                        "hash": "a7fade38779fc874a885f47440e5fa0f",
-                                        "children": [
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2021-07-24T01:53:13",
-                                                "name": "wing 1.png",
-                                                "hash": "e2c019e048af1776d0c323e1cf1f183f",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2021-07-24T01:53:13",
-                                                "name": "wing 2.png",
-                                                "hash": "ac0197c8d0e8da81ab94b49602852285",
-                                                "children": ""
-                                            },
-                                            {
-                                                "isFolder": "false",
-                                                "lastModified": "2021-07-24T01:57:02",
-                                                "name": "folder.lock",
-                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
-                                                "children": ""
-                                            }
-                                        ]
+                                        "isFolder": "false",
+                                        "lastModified": "2022-04-03T23:12:20",
+                                        "name": "Graph Occluder.lsmat",
+                                        "hash": "c6ea6eb8bc29acd1cbb39af9e2a0f0cc",
+                                        "children": ""
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2021-06-24T12:58:08",
+                                        "lastModified": "2022-04-03T23:07:51",
                                         "name": "folder.lock",
                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                         "children": ""
@@ -912,20 +893,122 @@
                             },
                             {
                                 "isFolder": "true",
-                                "lastModified": "2021-07-26T11:31:16",
-                                "name": "Other",
-                                "hash": "0911e9ff8f00ed6e13c7d34b4dd2daad",
+                                "lastModified": "2022-04-03T23:11:02",
+                                "name": "Butterfly Controller Resources",
+                                "hash": "dbe0fc77b195eaf92b1851729863adfe",
                                 "children": [
                                     {
-                                        "isFolder": "false",
-                                        "lastModified": "2021-07-26T11:31:16",
-                                        "name": "Graph Occluder.lsmat",
-                                        "hash": "89a4e4cfe7b110260ebd64284e39774b",
-                                        "children": ""
+                                        "isFolder": "true",
+                                        "lastModified": "2022-04-03T23:11:02",
+                                        "name": "Textures",
+                                        "hash": "a7fade38779fc874a885f47440e5fa0f",
+                                        "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-04-03T23:09:46",
+                                                "name": "wing 1.png",
+                                                "hash": "e2c019e048af1776d0c323e1cf1f183f",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-04-03T23:09:46",
+                                                "name": "wing 2.png",
+                                                "hash": "ac0197c8d0e8da81ab94b49602852285",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-04-03T23:09:46",
+                                                "name": "folder.lock",
+                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "isFolder": "true",
+                                        "lastModified": "2022-04-03T23:12:20",
+                                        "name": "Materials",
+                                        "hash": "195ae1c1e638c16d7bd63955e23d3f84",
+                                        "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-04-03T23:12:20",
+                                                "name": "Wing Blue.lsmat",
+                                                "hash": "7c1ad3e1762dffad0cfe0321d7734295",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-04-03T23:12:20",
+                                                "name": "Wing Orange.lsmat",
+                                                "hash": "a4651b9871cb8ca324f730798f13f158",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-04-03T23:09:47",
+                                                "name": "folder.lock",
+                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "isFolder": "true",
+                                        "lastModified": "2022-04-03T23:11:02",
+                                        "name": "Script",
+                                        "hash": "e408e7576c7444cab8264030f2dfd47d",
+                                        "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-04-03T23:09:46",
+                                                "name": "Butterfly.js",
+                                                "hash": "aa7bb2bf4e9a7003e89be0f9b4bd7b22",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-04-03T23:09:46",
+                                                "name": "Butterfly Controller.js",
+                                                "hash": "e6f8f654fe765145da4bf184a6bc466f",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-04-03T23:09:46",
+                                                "name": "folder.lock",
+                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "isFolder": "true",
+                                        "lastModified": "2022-04-03T23:11:02",
+                                        "name": "Meshes",
+                                        "hash": "c3e61d8564efb44eb53a8f7d30c0c1cb",
+                                        "children": [
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-04-03T23:09:46",
+                                                "name": "Plane.mesh",
+                                                "hash": "d533ea13249b5e36c7d724c3f8ac63b3",
+                                                "children": ""
+                                            },
+                                            {
+                                                "isFolder": "false",
+                                                "lastModified": "2022-04-03T23:09:46",
+                                                "name": "folder.lock",
+                                                "hash": "d41d8cd98f00b204e9800998ecf8427e",
+                                                "children": ""
+                                            }
+                                        ]
                                     },
                                     {
                                         "isFolder": "false",
-                                        "lastModified": "2021-06-24T12:58:14",
+                                        "lastModified": "2022-04-03T23:09:46",
                                         "name": "folder.lock",
                                         "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                         "children": ""
@@ -934,7 +1017,7 @@
                             },
                             {
                                 "isFolder": "false",
-                                "lastModified": "2021-06-07T16:37:36",
+                                "lastModified": "2022-04-03T23:07:51",
                                 "name": "folder.lock",
                                 "hash": "d41d8cd98f00b204e9800998ecf8427e",
                                 "children": ""
@@ -958,174 +1041,6 @@
                 "source": "",
                 "additional": "",
                 "resources": [
-                    {
-                        "name": "Butterfly",
-                        "type": "0",
-                        "subtype": "-1",
-                        "resourceId": "-1",
-                        "dependency": "0",
-                        "hidden": "false",
-                        "uid": "-1:-1",
-                        "fileId": "18446744073709551615",
-                        "originalId": "18446744073709551615",
-                        "publicId": "11806",
-                        "source": "",
-                        "additional": "",
-                        "resources": [
-                            {
-                                "name": "Script",
-                                "type": "0",
-                                "subtype": "-1",
-                                "resourceId": "-1",
-                                "dependency": "0",
-                                "hidden": "false",
-                                "uid": "-1:-1",
-                                "fileId": "18446744073709551615",
-                                "originalId": "18446744073709551615",
-                                "publicId": "11709",
-                                "source": "",
-                                "additional": "",
-                                "resources": [
-                                    {
-                                        "name": "Butterfly Controller",
-                                        "type": "4",
-                                        "subtype": "0",
-                                        "resourceId": "80",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1624532482799087:327400",
-                                        "fileId": "90",
-                                        "originalId": "18446744073709551615",
-                                        "publicId": "11809",
-                                        "source": "\/private\/var\/folders\/by\/0dhhk3j13j560jxj8p3x4rzr0000gn\/T\/Lens Studio-QDDMhf\/\/system\/\/emergencyFiles\/emergencyJs.js",
-                                        "additional": ""
-                                    },
-                                    {
-                                        "name": "Butterfly",
-                                        "type": "4",
-                                        "subtype": "0",
-                                        "resourceId": "81",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1624532490591664:329411",
-                                        "fileId": "91",
-                                        "originalId": "18446744073709551615",
-                                        "publicId": "11810",
-                                        "source": "\/private\/var\/folders\/by\/0dhhk3j13j560jxj8p3x4rzr0000gn\/T\/Lens Studio-QDDMhf\/\/system\/\/emergencyFiles\/emergencyJs.js",
-                                        "additional": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Mesh",
-                                "type": "0",
-                                "subtype": "-1",
-                                "resourceId": "-1",
-                                "dependency": "0",
-                                "hidden": "false",
-                                "uid": "-1:-1",
-                                "fileId": "18446744073709551615",
-                                "originalId": "18446744073709551615",
-                                "publicId": "11714",
-                                "source": "",
-                                "additional": "",
-                                "resources": [
-                                    {
-                                        "name": "Plane",
-                                        "type": "3",
-                                        "subtype": "0",
-                                        "resourceId": "13",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1624532224496241:274624",
-                                        "fileId": "9",
-                                        "originalId": "10",
-                                        "publicId": "11716",
-                                        "source": "\/private\/var\/folders\/by\/0dhhk3j13j560jxj8p3x4rzr0000gn\/T\/Lens Studio-QDDMhf\/\/system\/\/emergencyFiles\/emergencyMesh.mesh",
-                                        "additional": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Material [EDIT ME]",
-                                "type": "0",
-                                "subtype": "-1",
-                                "resourceId": "-1",
-                                "dependency": "0",
-                                "hidden": "false",
-                                "uid": "-1:-1",
-                                "fileId": "18446744073709551615",
-                                "originalId": "18446744073709551615",
-                                "publicId": "11717",
-                                "source": "",
-                                "additional": "",
-                                "resources": [
-                                    {
-                                        "name": "Wing",
-                                        "type": "2",
-                                        "subtype": "1",
-                                        "resourceId": "14",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1624532224525289:274636",
-                                        "fileId": "11",
-                                        "originalId": "12",
-                                        "publicId": "11719",
-                                        "source": "",
-                                        "additional": ""
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "Texture [EDIT ME]",
-                                "type": "0",
-                                "subtype": "-1",
-                                "resourceId": "-1",
-                                "dependency": "0",
-                                "hidden": "false",
-                                "uid": "-1:-1",
-                                "fileId": "18446744073709551615",
-                                "originalId": "18446744073709551615",
-                                "publicId": "11876",
-                                "source": "",
-                                "additional": "",
-                                "resources": [
-                                    {
-                                        "name": "wing 1",
-                                        "type": "1",
-                                        "subtype": "9",
-                                        "resourceId": "101",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1627084393889473:1926390",
-                                        "fileId": "140",
-                                        "originalId": "141",
-                                        "publicId": "11863",
-                                        "source": "\/private\/var\/folders\/by\/0dhhk3j13j560jxj8p3x4rzr0000gn\/T\/Lens Studio-JOQCKE\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
-                                        "additional": {
-                                            "originHash": "e2c019e048af1776d0c323e1cf1f183f"
-                                        }
-                                    },
-                                    {
-                                        "name": "wing 2",
-                                        "type": "1",
-                                        "subtype": "9",
-                                        "resourceId": "102",
-                                        "dependency": "0",
-                                        "hidden": "false",
-                                        "uid": "1627084394026531:1926402",
-                                        "fileId": "143",
-                                        "originalId": "144",
-                                        "publicId": "11864",
-                                        "source": "\/private\/var\/folders\/by\/0dhhk3j13j560jxj8p3x4rzr0000gn\/T\/Lens Studio-JOQCKE\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
-                                        "additional": {
-                                            "originHash": "ac0197c8d0e8da81ab94b49602852285"
-                                        }
-                                    }
-                                ]
-                            }
-                        ]
-                    },
                     {
                         "name": "Other",
                         "type": "0",
@@ -1199,6 +1114,225 @@
                                 "publicId": "11829",
                                 "source": "",
                                 "additional": ""
+                            },
+                            {
+                                "name": "Physics Root World Settings",
+                                "type": "36",
+                                "subtype": "1",
+                                "resourceId": "103",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "8675309:9035768",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "18446744073709551615",
+                                "source": "",
+                                "additional": ""
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Butterfly Controller Resources",
+                        "type": "0",
+                        "subtype": "-1",
+                        "resourceId": "-1",
+                        "dependency": "0",
+                        "hidden": "false",
+                        "uid": "-1:-1",
+                        "fileId": "18446744073709551615",
+                        "originalId": "18446744073709551615",
+                        "publicId": "11877",
+                        "source": "",
+                        "additional": "",
+                        "resources": [
+                            {
+                                "name": "Meshes",
+                                "type": "0",
+                                "subtype": "-1",
+                                "resourceId": "-1",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "-1:-1",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "11878",
+                                "source": "",
+                                "additional": "",
+                                "resources": [
+                                    {
+                                        "name": "Plane",
+                                        "type": "3",
+                                        "subtype": "0",
+                                        "resourceId": "104",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1649020186848728:27152",
+                                        "fileId": "149",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "11879",
+                                        "source": "\/Users\/gsmac31\/Library\/Caches\/Snap\/Lens Studio\/temp\/StudioJlMNxsDjRTEq\/\/system\/\/emergencyFiles\/emergencyMesh.mesh",
+                                        "additional": {
+                                            "info": {
+                                                "vertexAttribs": [
+                                                    {
+                                                        "semantic": "position",
+                                                        "format": "8",
+                                                        "canBeDisabled": "false"
+                                                    },
+                                                    {
+                                                        "semantic": "normal",
+                                                        "format": "8",
+                                                        "canBeDisabled": "true"
+                                                    },
+                                                    {
+                                                        "semantic": "texture0",
+                                                        "format": "8",
+                                                        "canBeDisabled": "true"
+                                                    }
+                                                ],
+                                                "hasBlendShapes": "false"
+                                            }
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Script",
+                                "type": "0",
+                                "subtype": "-1",
+                                "resourceId": "-1",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "-1:-1",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "11880",
+                                "source": "",
+                                "additional": "",
+                                "resources": [
+                                    {
+                                        "name": "Butterfly Controller",
+                                        "type": "4",
+                                        "subtype": "0",
+                                        "resourceId": "105",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1649020186860871:27165",
+                                        "fileId": "151",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "11881",
+                                        "source": "\/Users\/gsmac31\/Library\/Caches\/Snap\/Lens Studio\/temp\/StudioJlMNxsDjRTEq\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "Butterfly",
+                                        "type": "4",
+                                        "subtype": "0",
+                                        "resourceId": "106",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1649020186867971:27177",
+                                        "fileId": "152",
+                                        "originalId": "18446744073709551615",
+                                        "publicId": "11882",
+                                        "source": "\/Users\/gsmac31\/Library\/Caches\/Snap\/Lens Studio\/temp\/StudioJlMNxsDjRTEq\/\/system\/\/emergencyFiles\/emergencyJs.js",
+                                        "additional": ""
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Textures",
+                                "type": "0",
+                                "subtype": "-1",
+                                "resourceId": "-1",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "-1:-1",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "11883",
+                                "source": "",
+                                "additional": "",
+                                "resources": [
+                                    {
+                                        "name": "wing 1",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "107",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1649020186877225:27193",
+                                        "fileId": "153",
+                                        "originalId": "154",
+                                        "publicId": "11884",
+                                        "source": "\/Users\/gsmac31\/Library\/Caches\/Snap\/Lens Studio\/temp\/StudioJlMNxsDjRTEq\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                        "additional": {
+                                            "originHash": "e2c019e048af1776d0c323e1cf1f183f",
+                                            "subtype": "9"
+                                        }
+                                    },
+                                    {
+                                        "name": "wing 2",
+                                        "type": "1",
+                                        "subtype": "9",
+                                        "resourceId": "108",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1649020186891287:27205",
+                                        "fileId": "156",
+                                        "originalId": "157",
+                                        "publicId": "11885",
+                                        "source": "\/Users\/gsmac31\/Library\/Caches\/Snap\/Lens Studio\/temp\/StudioJlMNxsDjRTEq\/\/system\/\/emergencyFiles\/emergencyJpg.jpg",
+                                        "additional": {
+                                            "originHash": "ac0197c8d0e8da81ab94b49602852285",
+                                            "subtype": "9"
+                                        }
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "Materials",
+                                "type": "0",
+                                "subtype": "-1",
+                                "resourceId": "-1",
+                                "dependency": "0",
+                                "hidden": "false",
+                                "uid": "-1:-1",
+                                "fileId": "18446744073709551615",
+                                "originalId": "18446744073709551615",
+                                "publicId": "11886",
+                                "source": "",
+                                "additional": "",
+                                "resources": [
+                                    {
+                                        "name": "Wing Orange",
+                                        "type": "2",
+                                        "subtype": "1",
+                                        "resourceId": "109",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1649020186908295:27217",
+                                        "fileId": "159",
+                                        "originalId": "160",
+                                        "publicId": "11887",
+                                        "source": "",
+                                        "additional": ""
+                                    },
+                                    {
+                                        "name": "Wing Blue",
+                                        "type": "2",
+                                        "subtype": "1",
+                                        "resourceId": "110",
+                                        "dependency": "0",
+                                        "hidden": "false",
+                                        "uid": "1649020187028066:27256",
+                                        "fileId": "161",
+                                        "originalId": "162",
+                                        "publicId": "11888",
+                                        "source": "",
+                                        "additional": ""
+                                    }
+                                ]
                             }
                         ]
                     }
@@ -1206,7 +1340,18 @@
             }
         },
         "InspectorController": {
-            "selection": ""
+            "selection": {
+                "resources": [
+                    {
+                        "uid": "1649020186867971:27177",
+                        "path_list": [
+                            "Butterfly Controller Resources",
+                            "Script",
+                            "Butterfly"
+                        ]
+                    }
+                ]
+            }
         },
         "EffectsController": {
             "1": "",
@@ -1270,57 +1415,105 @@
             ]
         },
         "Compression::IController": {
-            "compression_info": [
+            "new_compression_info": [
                 {
-                    "k": "1627084393889473:1926390",
+                    "k": "1649020186848728:27152",
+                    "v": {
+                        "infos": {
+                            "originalSize": "564",
+                            "compressedSize": "564",
+                            "originalRAM": "92",
+                            "compressedRAM": "92",
+                            "extension": "mesh",
+                            "settings": {
+                                "isCompressed": "false",
+                                "info": {
+                                    "vertexAttribs": [
+                                        {
+                                            "semantic": "position",
+                                            "format": "8",
+                                            "canBeDisabled": "false"
+                                        },
+                                        {
+                                            "semantic": "normal",
+                                            "format": "8",
+                                            "canBeDisabled": "true"
+                                        },
+                                        {
+                                            "semantic": "texture0",
+                                            "format": "8",
+                                            "canBeDisabled": "true"
+                                        }
+                                    ],
+                                    "hasBlendShapes": "false"
+                                },
+                                "type": "0",
+                                "attributeFormat": "",
+                                "draco": {
+                                    "posBits": "11",
+                                    "texBits": "10",
+                                    "normalBits": "8",
+                                    "colorBits": "8",
+                                    "compressLvl": "7"
+                                }
+                            }
+                        },
+                        "uncompressed_file": "150",
+                        "compressed_files": ""
+                    }
+                },
+                {
+                    "k": "1649020186877225:27193",
                     "v": {
                         "infos": {
                             "originalSize": "7951",
-                            "compressedSize": "5294",
+                            "compressedSize": "5266",
                             "originalRAM": "65536",
                             "compressedRAM": "8192",
                             "extension": "png",
                             "settings": {
                                 "isCompressed": "true",
-                                "level": "2",
-                                "type": "1"
+                                "level": "1",
+                                "type": "1",
+                                "subtype": "9"
                             }
                         },
-                        "uncompressed_file": "142",
+                        "uncompressed_file": "155",
                         "compressed_files": [
                             {
                                 "k": {
                                     "uncompressed_hash": "e2c019e048af1776d0c323e1cf1f183f",
-                                    "settings_hash": "2049"
+                                    "settings_hash": "1025"
                                 },
-                                "v": "146"
+                                "v": "163"
                             }
                         ]
                     }
                 },
                 {
-                    "k": "1627084394026531:1926402",
+                    "k": "1649020186891287:27205",
                     "v": {
                         "infos": {
                             "originalSize": "7009",
-                            "compressedSize": "4758",
+                            "compressedSize": "4753",
                             "originalRAM": "65536",
                             "compressedRAM": "8192",
                             "extension": "png",
                             "settings": {
                                 "isCompressed": "true",
-                                "level": "2",
-                                "type": "1"
+                                "level": "1",
+                                "type": "1",
+                                "subtype": "9"
                             }
                         },
-                        "uncompressed_file": "145",
+                        "uncompressed_file": "158",
                         "compressed_files": [
                             {
                                 "k": {
                                     "uncompressed_hash": "ac0197c8d0e8da81ab94b49602852285",
-                                    "settings_hash": "2049"
+                                    "settings_hash": "1025"
                                 },
-                                "v": "147"
+                                "v": "164"
                             }
                         ]
                     }
@@ -1330,5 +1523,7 @@
         "AssetLibController": {
             "itemUidToID": ""
         }
-    }
+    },
+    "templateName": "",
+    "templateUrl": ""
 }
