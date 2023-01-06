@@ -14,7 +14,7 @@ From [maxvanleeuwen.com/lensstudio-butterflies](https://maxvanleeuwen.com/lensst
 
 <pre><code>
 It works without any coding!
-If you want to change parameters for the butterflies on runtime, this is what you could use:
+But in case you want to change parameters for the butterflies on runtime, you could use this:
 
 
 
