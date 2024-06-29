@@ -1,3 +1,5 @@
+# Butterflies
+
 An asset for Lens Studio that instantly adds butterflies to your scene.
 
 If your device has Lidar, they can even land on it and avoid collisions with it!
@@ -11,6 +13,7 @@ From [maxvanleeuwen.com/lensstudio-butterflies](https://maxvanleeuwen.com/lensst
 ![butterflies in lens studio](https://maxvanleeuwen.com/wp-content/uploads/Butterflies_thumb.gif)
 
 
+<br><br>
 
 <pre><code>
 It works without any coding!
