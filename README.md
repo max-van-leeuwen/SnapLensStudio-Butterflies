@@ -1,90 +1,108 @@
-# Butterflies
+> ⚠️ **This project is outdated, it was built using Lens Studio 4.0.1 and I'm planning to update it soon.
+
+---
+
+
+# Butterflies 🦋
 
 An asset for Lens Studio that instantly adds butterflies to your scene.
 
-If your device has Lidar, they can even land on it and avoid collisions with it!
+If your device has Lidar, they can even land on the world mesh and avoid collisions with it!
 
-Try [a demo of the butterflies in Snapchat here](https://lens.snapchat.com/16b62e0418ea4e7594da451df1e9da61).
-
+[Try a demo of the butterflies in Snapchat here](https://lens.snapchat.com/16b62e0418ea4e7594da451df1e9da61).  
 From [maxvanleeuwen.com/lensstudio-butterflies](https://maxvanleeuwen.com/lensstudio-butterflies)
 
+![Butterflies in Lens Studio](https://maxvanleeuwen.com/wp-content/uploads/Butterflies_thumb.gif)
 
+<br>
 
-![butterflies in lens studio](https://maxvanleeuwen.com/wp-content/uploads/Butterflies_thumb.gif)
+---
 
+- **Lidar Support:** Butterflies can land on objects and avoid collisions in your scene if your device supports Lidar.
+- **No Coding Required:** Fully functional out of the box, but customizable for developers.
 
-<br><br>
+---
 
-<pre><code>
-It works without any coding!
-But in case you want to change parameters for the butterflies on runtime, you could use this:
+<br>
 
+### Available API Functions
 
+#### Spawn and Remove Butterflies
+- **Spawn a number of butterflies** (n is a whole number). This function is called on start if `spawnOnStart` is more than 0.
+    ```js
+    .spawnButterflies(n)
+    ```
 
-- Spawn a number of butterflies (n is a whole number). This function is called on start if 'spawnOnStart' is more than 0.
-	script.api.spawnButterflies(n)
+- **Remove all currently instanced butterflies**.
+    ```js
+    .removeButterflies()
+    ```
 
+#### Butterfly Movement
+- **Moving speed**: Get or set the butterfly moving speed.
+    ```js
+    .movingSpeed
+    ```
 
+- **Hyperactive behavior**: Get or set the 'hyperactive' character trait of the butterflies.
+    ```js
+    .directionalSpeed
+    ```
 
-- Remove all currently instanced butterflies
-	script.api.removeButterflies()
+#### Appearance
+- **Random sizes**: Get or set the random sizes of newly spawned butterflies (vec2 containing min, max).
+    ```js
+    .randomSize
+    ```
 
+#### Follow Behavior
+- **Follow strength**: Get or set the strength at which butterflies follow the transform.
+    ```js
+    .followStrength
+    ```
 
+- **Follow radius**: Get or set the radius around the followed transform to stay in (world space).
+    ```js
+    .followRadius
+    ```
 
-- Get or set the butterfly moving speed
-	script.api.movingSpeed
+- **Follow transform**: Get or set the transform for butterflies to follow (uses position only, default is this Butterfly Controller's Transform).
+    ```js
+    .followTransform
+    ```
 
+#### Ground and World Mesh Interaction
+- **Stay above ground**: Get or set whether butterflies should always be above ground level (world y = 0).
+    ```js
+    .alwaysAboveGround
+    ```
 
+- **Land on world mesh**: Get or set whether butterflies should land on the world mesh occasionally (requires world mesh generation/Lidar). When enabled, `.deviceTrackingComponent` is required for it to work.
+    ```js
+    .landOnWorldMesh
+    ```
 
-- Get or set the 'hyperactive' character trait of the butterflies
-	script.api.directionalSpeed
+- **Avoid collisions with world mesh**: Get or set whether butterflies should avoid collisions with the world mesh (slower when there are many butterflies flying around).
+    ```js
+    .avoidCollision
+    ```
 
+- **Device Tracking Component**: Get or set the Device Tracking Component needed when landing on the world mesh is enabled.
+    ```js
+    .deviceTrackingComponent
+    ```
 
+- **World mesh classifications**: Get or set the world mesh classifications that butterflies can land on (indices, from [Lens Studio API](https://lensstudio.snapchat.com/api/classes/TrackedMeshFaceClassification)).
+    ```js
+    .landOnClassifications
+    ```
 
-- Get or set the random sizes of newly spawned butterflies (vec2 containing min, max)
-	script.api.randomSize
+---
 
+### Butterfly Instances
+- **Access butterflies**: Get the array of currently instanced butterfly Scene Objects.
+    ```js
+    .butterflies
+    ```
 
-
-- Get or set the strength at which butterflies follow the transform
-	script.api.followStrength
-
-
-
-- Get or set the radius around the followed transform to stay in (world space)
-	script.api.followRadius
-
-
-
-- Get or set the transform for butterflies to follow (uses position only, default is this Butterfly Controller's Transform)
-	script.api.followTransform
-
-
-
-- Get or set whether butterflies should always be above ground level (world y = 0)
-	script.api.alwaysAboveGround
-
-
-
-- Get or set whether butterflies should land on the world mesh occasionally (world mesh generation/lidar needed) - when ebabled, script.api.deviceTrackingComponent is required for it to work!
-	script.api.landOnWorldMesh
-
-
-
-- Get or set whether butterflies should avoid collisions with the world mesh (slower, especially when there are a lot of butterflies flying around)
-	script.api.avoidCollision
-
-
-
-- Get or set the Device Tracking Component needed (necessary when landing on world mesh is enabled)
-	script.api.deviceTrackingComponent
-
-
-
-- Get or set the world mesh classifications that butterflies can land on (indices, from lensstudio.snapchat.com/api/classes/TrackedMeshFaceClassification)
-	script.api.landOnClassifications
-
-
-
-- Get the array of currently instanced butterfly Scene Objects
-	script.api.butterflies
+---
